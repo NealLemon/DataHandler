@@ -33,3 +33,4 @@ Any database supported by mybatis can be imported.
 只要mybatis支持的数据库都可以进行导入。
 
 
+##Multi-thread is not currently supported。  目前版本不支持多线程处理。
