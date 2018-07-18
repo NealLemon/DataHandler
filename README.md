@@ -11,7 +11,7 @@ This tool is particularly proficient at handling large files with `.csv`,`.xls`,
 I have alread give an example in the project named Demo,You can develop in the same way.
 * 1.create your own package.
   * 1.1 create Mapped SQL Statements xml eg.. DataHandlerTool/demo/config/StudentMapper.xml
-  * 1.2 create entity eg.. DataHandlerTool.demo.domain.Student
+  * 1.2 create entity eg.. DataHandlerTool.demo.domain.Student  ps.. Annotation - @Column(name="`mapped Excel column title`",regex = "`filter data with regex`")
   * 1.3 create interface mapper instance eg.. DataHandlerTool.demo.mapper.StudentMapper  ps ..the method must be `insert` and the parame must be `Object`.
   * 1.4 create your handler class eg..DataHandlerTool.demo.handler.studentHandler   ps..you can do your own logic on method `selfDefinedHandle` and pay attention to Generics.
 * 2.configure defined-config.xml . 
@@ -23,7 +23,7 @@ Any database supported by mybatis can be imported
 在项目中已经有一个Demo 示例,大家可以按照这个示例进行开发。
 * 1.创建自己的包
   * 1.1创建映射sql语句的XML文件.  如.DataHandlerTool/demo/config/StudentMapper.xml
-  * 1.2 创建实体类.   如.DataHandlerTool.demo.domain.Student
+  * 1.2 创建实体类.   如.DataHandlerTool.demo.domain.Student   ps..注释 - @Column(name="`映射的表头`",regex = "`字段匹配的正则`")
   * 1.3创建 mapper接口 如.DataHandlerTool.demo.mapper.StudentMapper  注意 方法名必须为`insert` 参数必须为 `Objecrt`.
   * 1.4创建自己的处理类  如..DataHandlerTool.demo.handler.studentHandler  注意 你可以在`selfDefinedHandle`方法中执行 自己的数据处理逻辑。
 * 2.配置 defined-config.xml 
