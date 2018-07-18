@@ -1,9 +1,6 @@
 package DataHandlerTool.demo.mapper;
 
 import DataHandlerTool.demo.domain.Student;
-import DataHandlerTool.management.preconfig.BaseMapper;
-
-import java.util.List;
 
 /**
  * demo示例
@@ -11,8 +8,10 @@ import java.util.List;
  */
 public interface StudentMapper{
 
-    //获取全部学生
-    List<Student> selectStudents();
-
-    int insert(Object o);
+    /**
+     * 入库接口
+     * @param o
+     * @return
+     */
+    void insert(Object o);
 }

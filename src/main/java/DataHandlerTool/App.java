@@ -3,7 +3,6 @@ package DataHandlerTool;
 import DataHandlerTool.management.DataProcessorImp;
 import DataHandlerTool.management.InitConfiguration;
 
-import java.io.IOException;
 
 /**
  * Hello world!
@@ -11,13 +10,9 @@ import java.io.IOException;
  */
 public class App 
 {
-    public static void main( String[] args ) throws IOException, ClassNotFoundException {
-      InitConfiguration initConfiguration = new InitConfiguration();
+    public static void main( String[] args ) {
+        InitConfiguration initConfiguration = new InitConfiguration();
         DataProcessorImp dataProcessorImp = new DataProcessorImp();
         dataProcessorImp.generate(initConfiguration.attributeList);
-
-        //System.out.println(TestClass.class.getCanonicalName());
-
-
     }
 }

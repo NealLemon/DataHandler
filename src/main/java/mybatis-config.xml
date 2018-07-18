@@ -11,6 +11,7 @@
         <package name="DataHandlerTool.demo.domain"/>
     </typeAliases>
     <environments default="development">
+        <!-- demo数据源-->
         <environment id="development">
             <transactionManager type="JDBC">
                 <property name="" value=""/>
@@ -24,6 +25,7 @@
         </environment>
     </environments>
     <mappers>
+        <!--demo mapper.xml-->
         <mapper resource="DataHandlerTool/demo/config/StudentMapper.xml"/>
     </mappers>
 </configuration>
