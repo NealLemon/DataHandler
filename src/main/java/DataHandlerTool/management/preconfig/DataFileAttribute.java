@@ -27,9 +27,23 @@ public class DataFileAttribute {
     //出错文件存储目录
     private String fileErrorDir;
 
+    //字符集
     private String charsetName;
 
+
+    //查询接口mapper类路径
     private String mapper;
+
+    //执行插入的方法名
+    private String insertMethod;
+
+    public String getInsertMethod() {
+        return insertMethod;
+    }
+
+    public void setInsertMethod(String insertMethod) {
+        this.insertMethod = insertMethod;
+    }
 
     public String getMapper() {
         return mapper;

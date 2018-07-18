@@ -9,6 +9,7 @@
         <modelName>student</modelName>
         <charsetName>GBK</charsetName>
         <mapper>DataHandlerTool.demo.mapper.StudentMapper</mapper>
+        <insertMethod>insert123</insertMethod>
     </dataConfig>
     <dataConfig>
         <clazz>DataHandlerTool.demo.handler.studentHandler</clazz>

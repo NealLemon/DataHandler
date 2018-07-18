@@ -69,6 +69,7 @@ public class InitConfiguration {
                 dataFileAttribute.setFileHandleClazz(initFileHanleProcessor(definedConfigBean.getClazz()));
                 dataFileAttribute.setCharsetName(definedConfigBean.getCharsetName());
                 dataFileAttribute.setMapper(definedConfigBean.getMapper());
+                dataFileAttribute.setInsertMethod(definedConfigBean.getInsertMethod());
                 attributeList.add(dataFileAttribute);
             }
         } catch (IOException e) {

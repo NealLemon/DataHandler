@@ -18,7 +18,7 @@ public interface FileHandleProcessor {
     /**
      * 读取操作以及处理操作
      */
-    void dataInDatabaseProcess(SqlSessionFactory sqlSessionFactory,String mapper) throws DataHandlerException;
+    void dataInDatabaseProcess(SqlSessionFactory sqlSessionFactory,String mapper,String insertMethod) throws DataHandlerException;
 
     /**
      * 用户自定义处理

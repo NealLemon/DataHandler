@@ -150,7 +150,7 @@ public abstract class AbstractFileHandleProcessor<C> implements FileHandleProces
 
 
     @Override
-    public void dataInDatabaseProcess(SqlSessionFactory sqlSessionFactory,String mapperStr) throws DataHandlerException {
+    public void dataInDatabaseProcess(SqlSessionFactory sqlSessionFactory,String mapperStr,String insertMethod) throws DataHandlerException {
         SqlSession session = sqlSessionFactory.openSession(ExecutorType.BATCH, false);
         Method insert = null;
         Object mapper =null;
@@ -158,7 +158,7 @@ public abstract class AbstractFileHandleProcessor<C> implements FileHandleProces
             mapper = session.getMapper(Class.forName(mapperStr));
             Method[] methods = mapper.getClass().getMethods();
             for (Method method : methods) {
-                if(method.getName().equals("insert")) {
+                if(method.getName().equals(insertMethod.trim())) {
                     insert = method;
                     break;
                 }

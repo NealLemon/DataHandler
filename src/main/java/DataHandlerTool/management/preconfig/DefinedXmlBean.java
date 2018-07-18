@@ -1,6 +1,8 @@
 package DataHandlerTool.management.preconfig;
 
 
+import DataHandlerTool.management.constant.ConfigEnum;
+
 /**
  * 自定义配置xmlBean
  * @author Neal
@@ -25,9 +27,22 @@ public class DefinedXmlBean {
     //数据库ID
     private String databaseId;
 
+    //字符集编码
     private String charsetName;
 
+    //对应的mapper接口
     private String mapper;
+
+    //执行插入的方法名
+    private String insertMethod = ConfigEnum.DEFAULT_INSERT_METHOD.getStr();
+
+    public String getInsertMethod() {
+        return insertMethod;
+    }
+
+    public void setInsertMethod(String insertMethod) {
+        this.insertMethod = insertMethod;
+    }
 
     public String getMapper() {
         return mapper;

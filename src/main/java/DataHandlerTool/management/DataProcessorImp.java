@@ -43,7 +43,7 @@ public class DataProcessorImp implements DataProcessor {
                     fileHandler.setCharsetName(dataFileAttribute.getCharsetName());
                     c.generate(fileHandler);
                     c.selfDefinedHandle();
-                    c.dataInDatabaseProcess(dataFileAttribute.getSqlSessionFactory(),dataFileAttribute.getMapper());
+                    c.dataInDatabaseProcess(dataFileAttribute.getSqlSessionFactory(),dataFileAttribute.getMapper(),dataFileAttribute.getInsertMethod());
                 }catch (DataHandlerException e) {
                     try {
                         FileUtils.copyToDirectory(file,new File(dataFileAttribute.getFileErrorDir()));
