@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<configuration>
+    <dataConfig>
+        <clazz>DataHandlerTool.expressage.handler.ExpressHandler</clazz>
+        <databaseId>development</databaseId>
+        <fileBakDir>D:\neal\JZ\express</fileBakDir>
+        <fileDir>D:\neal\JZ\express</fileDir>
+        <fileErrorDir>D:\neal\JZ\express</fileErrorDir>
+        <modelName>ExpressBean</modelName>
+        <charsetName>GBK</charsetName>
+        <mapper>DataHandlerTool.expressage.mapper.ExpressMapper</mapper>
+        <insertMethod>insert</insertMethod>
+    </dataConfig>
+</configuration>

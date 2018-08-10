@@ -6,10 +6,6 @@
     <settings>
         <setting name="mapUnderscoreToCamelCase" value="true"/>
     </settings>
-    <typeAliases>
-        <!-- demo对应实体类引用-->
-        <package name="DataHandlerTool.demo.domain"/>
-    </typeAliases>
     <environments default="development">
         <!-- demo数据源-->
         <environment id="development">
@@ -24,8 +20,9 @@
             </dataSource>
         </environment>
     </environments>
+
+    <!-- 配置实体类-->
     <mappers>
-        <!--demo mapper.xml-->
-        <mapper resource="DataHandlerTool/demo/config/StudentMapper.xml"/>
+        <mapper class="DataHandlerTool.demo.mapper.StudentMapper"/>
     </mappers>
 </configuration>

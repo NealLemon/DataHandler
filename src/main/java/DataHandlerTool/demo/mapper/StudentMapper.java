@@ -1,6 +1,6 @@
 package DataHandlerTool.demo.mapper;
 
-import DataHandlerTool.demo.domain.Student;
+import org.apache.ibatis.annotations.Insert;
 
 /**
  * demo示例
@@ -13,5 +13,6 @@ public interface StudentMapper{
      * @param o
      * @return
      */
+    @Insert("insert into student (name,number) values(#{name},#{number})")
     void insert(Object o);
 }

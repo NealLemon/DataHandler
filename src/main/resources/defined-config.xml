@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<configuration>
+   <dataConfig>
+        <clazz>DataHandlerTool.demo.handler.studentHandler</clazz>  <!-- 自定义处理类-->
+        <databaseId>development</databaseId>   <!--mybatis配置的数据源id-->
+        <fileBakDir>D:\neal\file\bak</fileBakDir> <!--文件处理备份路径-->
+        <fileDir>D:\neal\file</fileDir> <!--文件路径-->
+        <fileErrorDir>D:\neal\file\error</fileErrorDir> <!--文件错误路径-->
+        <modelName>Student</modelName> <!--模型名称-->
+        <charsetName>GBK</charsetName> <!--专为CSV文件配置字符集-->
+        <mapper>DataHandlerTool.demo.mapper.StudentMapper</mapper> <!-- mybatis 数据库操作mapper接口-->
+        <insertMethod>insert</insertMethod> <!-- 引用mapper接口里的方法-->
+    </dataConfig>
+</configuration>

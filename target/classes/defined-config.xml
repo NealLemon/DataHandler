@@ -1,24 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <configuration>
-    <dataConfig>
+   <dataConfig>
         <clazz>DataHandlerTool.demo.handler.studentHandler</clazz>
         <databaseId>development</databaseId>
         <fileBakDir>D:\neal\file\bak</fileBakDir>
         <fileDir>D:\neal\file</fileDir>
         <fileErrorDir>D:\neal\file\error</fileErrorDir>
-        <modelName>student</modelName>
+        <modelName>Student</modelName>
         <charsetName>GBK</charsetName>
         <mapper>DataHandlerTool.demo.mapper.StudentMapper</mapper>
-        <insertMethod>insert123</insertMethod>
-    </dataConfig>
-    <dataConfig>
-        <clazz>DataHandlerTool.demo.handler.studentHandler</clazz>
-        <databaseId>development</databaseId>
-        <fileBakDir>D:\neal\file1\bak</fileBakDir>
-        <fileDir>D:\neal\file1</fileDir>
-        <fileErrorDir>D:\neal\file1\error</fileErrorDir>
-        <modelName>student1</modelName>
-        <charsetName>GBK</charsetName>
-        <mapper>DataHandlerTool.demo.mapper.StudentMapper</mapper>
+        <insertMethod>insert</insertMethod>
     </dataConfig>
 </configuration>

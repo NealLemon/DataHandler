@@ -6,10 +6,13 @@
     <settings>
         <setting name="mapUnderscoreToCamelCase" value="true"/>
     </settings>
-    <typeAliases>
-        <!-- demo对应实体类引用-->
-        <package name="DataHandlerTool.demo.domain"/>
-    </typeAliases>
+<!--    <typeAliases>
+        &lt;!&ndash; demo对应实体类引用&ndash;&gt;
+        <package name="DataHandlerTool.expressage.domain"/>
+        <package name="DataHandlerTool.phone.domain"/>
+        <package name="DataHandlerTool.AliPay.domain"/>
+        <package name="DataHandlerTool.bank.domain"/>
+    </typeAliases>-->
     <environments default="development">
         <!-- demo数据源-->
         <environment id="development">
@@ -25,7 +28,6 @@
         </environment>
     </environments>
     <mappers>
-        <!--demo mapper.xml-->
-        <mapper resource="DataHandlerTool/demo/config/StudentMapper.xml"/>
+        <mapper class="DataHandlerTool.demo.mapper.StudentMapper"/>
     </mappers>
 </configuration>
